@@ -1,0 +1,31 @@
+.nav {
+  padding-inline: 9rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  /* place-items: center; */
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: clamp(0.5rem, 2.5vw, 1rem);
+  align-items: center;
+  list-style: none;
+}
+
+.links button {
+  font-size: 1.5rem;
+  color: rgb(var(--text-rgb));
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 1rem;
+}
+
+.links a {
+  padding: 1rem;
+  font-size: 1.5rem;
+}

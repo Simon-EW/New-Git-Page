@@ -1,8 +1,17 @@
-.nav {
+.header {
   padding-inline: 9rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  /* place-items: center; */
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
 }
 
 .links {
@@ -15,19 +24,32 @@
 }
 
 .links button {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: rgb(var(--text-rgb));
   background-color: transparent;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   border: none;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.download {
+  font-size: 1.25rem;
+  color: rgb(var(--background-rgb));
+  background-color: rgb(var(--accent-rgb));
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
 }
 
 .links a {
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .expanded {

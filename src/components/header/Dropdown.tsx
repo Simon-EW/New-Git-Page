@@ -94,8 +94,10 @@ export default function Dropdown({
           className={`${style.items}`}
         >
           {items.map((child) => (
-            <li key={label}>
-              <a href={child.link}>{child.label}</a>
+            <li key={child.label}>
+              <a href={`/${label.toLowerCase()}/${child.link}`}>
+                {child.label}
+              </a>
             </li>
           ))}
         </ul>

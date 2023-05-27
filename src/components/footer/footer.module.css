@@ -1,0 +1,32 @@
+.footer {
+  background-color: rgb(var(--secondary-rgb));
+  padding: 2rem 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.git_icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.download_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  border: none;
+}
+
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  font-size: 1.25rem;
+}

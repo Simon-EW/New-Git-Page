@@ -4,6 +4,7 @@ import { images } from "./images";
 import style from "./carousel.module.css";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 export default function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -41,7 +42,7 @@ export default function Carousel() {
             href={image.href}
             target="_blank"
           >
-            <img src={image.src.src} alt={image.alt} />
+            <Image src={image.src} alt={image.alt} />
           </a>
         ))}
         {images.map((image, index) => (
@@ -51,7 +52,7 @@ export default function Carousel() {
             href={image.href}
             target="_blank"
           >
-            <img src={image.src.src} alt={image.alt} />
+            <Image src={image.src} alt={image.alt} />
           </a>
         ))}
       </div>

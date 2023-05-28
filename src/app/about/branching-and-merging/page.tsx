@@ -43,8 +43,8 @@ export default function BranchingAndMerging() {
             <li>
               <p>
                 <span className={style.focus}>Feature Based Workflow.</span>{" "}
-                Create new branches for each new feature you're working on so
-                you can seamlessly switch back and forth between them, then
+                Create new branches for each new feature you&apos;re working on
+                so you can seamlessly switch back and forth between them, then
                 delete each branch when that feature gets merged into your main
                 line.
               </p>
@@ -52,9 +52,9 @@ export default function BranchingAndMerging() {
             <li>
               <p>
                 <span className={style.focus}>Disposable Experimentation.</span>{" "}
-                Create a branch to experiment in, realize it's not going to
+                Create a branch to experiment in, realize it&apos;s not going to
                 work, and just delete it - abandoning the work—with nobody else
-                ever seeing it (even if you've pushed other branches in the
+                ever seeing it (even if you&apos;ve pushed other branches in the
                 meantime).
               </p>
             </li>

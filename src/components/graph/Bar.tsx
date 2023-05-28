@@ -18,7 +18,7 @@ export default function Bar({
     if (barCover.current) {
       barCover.current.style.setProperty("--value", `${100 - value}%`);
     }
-  }, []);
+  }, [value]);
 
   return (
     <div className={style.bar}>

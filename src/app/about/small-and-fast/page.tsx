@@ -29,8 +29,9 @@ export default function SmallAndFast() {
       <section className={style.section}>
         <h2>Benchmarks</h2>
         <p>
-          Let's see how common operations stack up against Subversion, a common
-          centralized version control system that is similar to CVS or Perforce.
+          Let&apos;s see how common operations stack up against Subversion, a
+          common centralized version control system that is similar to CVS or
+          Perforce.
           <i>Smaller is faster.</i>
         </p>
         <div className={pageStyle.benchmarks}>
@@ -43,11 +44,12 @@ export default function SmallAndFast() {
           performed on both.
         </p>
         <p>
-          In some cases, the commands don't match up exactly. Here, matching on
-          the lowest common denominator was attempted. For example, the 'commit'
-          tests also include the time to push for Git, though most of the time
-          you would not actually be pushing to the server immediately after a
-          commit where the two commands cannot be separated in SVN.
+          In some cases, the commands don&apos;t match up exactly. Here,
+          matching on the lowest common denominator was attempted. For example,
+          the &apos;commit&apos; tests also include the time to push for Git,
+          though most of the time you would not actually be pushing to the
+          server immediately after a commit where the two commands cannot be
+          separated in SVN.
         </p>
         <p>All of these times are in seconds.</p>
         <div className={pageStyle.benchmark_results}>

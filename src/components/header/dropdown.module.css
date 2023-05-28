@@ -11,7 +11,6 @@
   background-color: rgb(var(--secondary-rgb));
   padding: 0.75rem;
   border-radius: 0.5rem;
-  position: absolute;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
   list-style: none;
   font-size: 1rem;
@@ -24,4 +23,25 @@
 
 .flip {
   transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .dropdown {
+    display: block;
+  }
+
+  .items {
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .items[aria-expanded="true"] {
+    display: flex;
+  }
+
+  .items a {
+    font-size: 1.5rem;
+  }
 }

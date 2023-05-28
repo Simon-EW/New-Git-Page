@@ -1,0 +1,12 @@
+.graph {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media screen and (max-width: 576px) {
+  .graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

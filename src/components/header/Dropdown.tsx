@@ -56,6 +56,10 @@ export default function Dropdown({
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
+
+    if (window.innerWidth < 1000) {
+      return;
+    }
     setHovered(true);
   };
 
@@ -69,8 +73,7 @@ export default function Dropdown({
     <>
       <div className={style.dropdown}>
         <button
-          aria-expanded="false"
-          aria-label={label}
+          aria-expanded={hovered || clicked}
           onClick={onClick}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
@@ -86,7 +89,6 @@ export default function Dropdown({
           />
         </button>
         <ul
-          aria-labelledby={label}
           aria-expanded={hovered || clicked}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}

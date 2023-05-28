@@ -1,32 +1,88 @@
+"use client";
+
 import style from "./header.module.css";
 import Image from "next/image";
 import gitIcon from "@/icons/Git.svg";
 import downloadIcon from "@/icons/Download.svg";
 
 import Dropdown from "./Dropdown";
+import { use, useEffect, useRef, useState } from "react";
 
 export default function Nav() {
+  // Code to add a border to the header when the user scrolls down
+  const [showBorder, setShowBorder] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShowBorder(true);
+      } else {
+        setShowBorder(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Make sure to remove the event listener when the component unmounts
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const [expanded, setExpanded] = useState(false);
+  const header = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    const onClickOutside = (e: MouseEvent) => {
+      if (header.current && !header.current.contains(e.target as Node)) {
+        setExpanded(false);
+      }
+    };
+    document.addEventListener("click", onClickOutside);
+
+    return () => {
+      document.removeEventListener("click", onClickOutside);
+    };
+  }, []);
+
+  const onClick = () => {
+    setExpanded(!expanded);
+  };
+
   return (
-    <header className={style.header}>
+    <header
+      className={`${style.header} ${showBorder ? style.show_border : ""}`}
+      ref={header}
+    >
       <div className={style.logo}>
         <Image src={gitIcon} alt="Git Logo" />
         <span>Git</span>
       </div>
       <nav>
-        <ul className={style.links}>
+        <button
+          className={style.menu_toggle}
+          onClick={onClick}
+          aria-expanded={expanded}
+          aria-controls="menu"
+          aria-label="Open menu"
+        >
+          <span className={style.hamburger}>
+            <span className={style.bar}></span>
+            <span className={style.bar}></span>
+            <span className={style.bar}></span>
+          </span>
+        </button>
+        <ul className={`${style.links}`} id="menu">
           <li>
             <Dropdown
               label="About"
               items={[
                 {
-                  label: "Branching and Merging",
+                  label: "Branching & Merging",
                   link: "branching-and-merging",
                 },
-                { label: "Small and Fast", link: "small-and-fast" },
+                { label: "Small & Fast", link: "small-and-fast" },
                 { label: "Distributed", link: "distributed" },
                 { label: "Data Assurance", link: "data-assurance" },
                 { label: "Staging Area", link: "staging-area" },
-                { label: "Free and Open Source", link: "free-and-open-source" },
+                { label: "Free & Open Source", link: "free-and-open-source" },
                 { label: "Trademark", link: "trademark" },
               ]}
             />

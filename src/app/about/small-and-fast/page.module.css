@@ -1,0 +1,11 @@
+.benchmarks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+  place-items: center;
+  margin-top: 2rem;
+}
+
+.benchmarks > img {
+  filter: invert(1);
+}

@@ -1,0 +1,18 @@
+.benchmark_results {
+  width: 100%;
+}
+
+.benchmark_results th {
+  text-align: left;
+  padding: 0.25rem 0.5rem;
+}
+
+.benchmark_results td {
+  padding: 0.25rem 0.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .benchmark_results {
+    font-size: 0.75rem;
+  }
+}

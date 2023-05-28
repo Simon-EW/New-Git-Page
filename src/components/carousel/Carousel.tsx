@@ -52,7 +52,7 @@ export default function Carousel() {
             href={image.href}
             target="_blank"
           >
-            <Image src={image.src} alt={image.alt} />
+            <Image src={image.src} alt={image.alt} loading="eager" />
           </a>
         ))}
       </div>

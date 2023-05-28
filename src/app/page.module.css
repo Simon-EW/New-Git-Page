@@ -49,6 +49,7 @@
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   flex-grow: 0;
+  transition: background-color 0.2s ease-in;
 }
 
 .actions > a:first-child {
@@ -58,8 +59,16 @@
   font-weight: 600;
 }
 
+.actions > a:first-child:hover {
+  background-color: rgb(var(--accent-rgb), 0.8);
+}
+
 .actions > a:last-child {
   background-color: rgb(var(--secondary-rgb));
+}
+
+.actions > a:last-child:hover {
+  background-color: rgb(var(--secondary-rgb), 0.8);
 }
 
 .section {

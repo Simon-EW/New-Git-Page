@@ -1,0 +1,41 @@
+.main {
+  padding: 5rem var(--inline-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.main p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.section code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  background-color: rgb(var(--secondary-rgb));
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.list > li {
+  margin-left: 1em;
+}
+
+.focus {
+  font-weight: 700;
+}

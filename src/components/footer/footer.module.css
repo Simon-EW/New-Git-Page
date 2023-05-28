@@ -31,6 +31,12 @@
   font-size: 1.25rem;
 }
 
+.downloads > a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;

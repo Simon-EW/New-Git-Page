@@ -10,7 +10,7 @@ import Graph from "@/components/graph/Graph";
 
 export default function Home() {
   return (
-    <main className={style.main}>
+    <main className={style.main} id="main">
       <section className={style.top_section}>
         <h1>Free & Open Source Version Control System</h1>
         <Image src={branchingImage} alt="Branching Image" />
@@ -20,8 +20,8 @@ export default function Home() {
           efficiency.
         </p>
         <div className={style.actions}>
-          <a href="/download">Download</a>
-          <a href="/docs">Documentation</a>
+          <a href="/download/git-clients">Download</a>
+          <a href="/docs/reference">Documentation</a>
         </div>
       </section>
 

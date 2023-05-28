@@ -6,6 +6,7 @@
   margin-top: 2rem;
 }
 
+/* Invert since I couldn't figure out how to make google graphs returna graph with light axis */
 .benchmarks > img {
   filter: invert(1);
 }

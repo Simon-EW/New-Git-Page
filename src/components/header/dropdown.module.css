@@ -19,7 +19,7 @@
 }
 
 /* Sets display to block when opened */
-.items[aria-expanded="true"] {
+.button[aria-expanded="true"] ~ .items {
   display: block;
 }
 
@@ -40,7 +40,7 @@
     position: relative;
   }
 
-  .items[aria-expanded="true"] {
+  .button[aria-expanded="true"] ~ .items {
     display: flex;
   }
 

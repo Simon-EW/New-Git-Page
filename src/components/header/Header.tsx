@@ -6,7 +6,7 @@ import gitIcon from "@/icons/Git.svg";
 import downloadIcon from "@/icons/Download.svg";
 
 import Dropdown from "./Dropdown";
-import { use, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Nav() {
   // Code to add a border to the header when the user scrolls down
@@ -52,6 +52,9 @@ export default function Nav() {
       className={`${style.header} ${showBorder ? style.show_border : ""}`}
       ref={header}
     >
+      <a href="#main" className={style.skip}>
+        Skip to main content
+      </a>
       <a href="/" className={style.logo}>
         <Image src={gitIcon} alt="Git Logo" />
         <span>Git</span>
@@ -115,7 +118,7 @@ export default function Nav() {
         </ul>
       </nav>
 
-      <a className={style.download} href="/download">
+      <a className={style.download} href="/download/git-clients">
         <Image src={downloadIcon} alt="" aria-hidden />
         <span>Download</span>
       </a>

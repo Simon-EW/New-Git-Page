@@ -96,7 +96,6 @@ export default function Dropdown({
           />
         </button>
         <ul
-          aria-expanded={hovered || clicked}
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           ref={dropdown}

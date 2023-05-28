@@ -20,6 +20,7 @@ export default function Dropdown({
 
   const timeout = useRef<NodeJS.Timeout | null>(null);
 
+  // Used to close the dropdown when the user clicks outside of it
   useEffect(() => {
     const onClickOutside = (e: MouseEvent) => {
       if (button.current && dropdown.current) {
@@ -53,10 +54,12 @@ export default function Dropdown({
   };
 
   const onMouseEnter = () => {
+    // Make sure to clear the timeout if there is one so the dropdown doesn't close
     if (timeout.current) {
       clearTimeout(timeout.current);
     }
-
+    // Don't display the dropdown on hover on mobile or screens smaller than 1000px
+    // due to the design at this size.
     if (window.innerWidth < 1000) {
       return;
     }
@@ -64,6 +67,10 @@ export default function Dropdown({
   };
 
   const onMouseLeave = () => {
+    // Make sure to clear the timeout so the dropdown doesn't close to early
+    if (timeout.current) {
+      clearTimeout(timeout.current);
+    }
     timeout.current = setTimeout(() => {
       setHovered(false);
     }, 150);

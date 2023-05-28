@@ -1,12 +1,9 @@
+import style from "./layout.module.css";
+
 export default function AboutLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className="Test">
-      <h1>Test</h1>
-      {children}
-    </div>
-  );
+  return <main className={style.main}>{children}</main>;
 }

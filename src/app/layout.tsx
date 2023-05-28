@@ -3,18 +3,13 @@ import { Inter } from "next/font/google";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
+// Initialize Inter font with latin subset
 const inter = Inter({ subsets: ["latin"] });
 
+// Define metadata for any page where it isn't overridden
 export const metadata = {
   title: "Git",
   description: "Main page for Git",
-  visualViewport: {
-    width: "device-width",
-    height: "device-height",
-    initialScale: 1,
-    minimumScale: 1,
-    maximumScale: 1,
-  },
 };
 
 export default function RootLayout({

@@ -29,6 +29,7 @@ export default function Nav() {
   const [expanded, setExpanded] = useState(false);
   const header = useRef<HTMLHeadingElement>(null);
 
+  // Close the dropdown when the user clicks outside of it
   useEffect(() => {
     const onClickOutside = (e: MouseEvent) => {
       if (header.current && !header.current.contains(e.target as Node)) {
@@ -51,10 +52,10 @@ export default function Nav() {
       className={`${style.header} ${showBorder ? style.show_border : ""}`}
       ref={header}
     >
-      <div className={style.logo}>
+      <a href="/" className={style.logo}>
         <Image src={gitIcon} alt="Git Logo" />
         <span>Git</span>
-      </div>
+      </a>
       <nav>
         <button
           className={style.menu_toggle}

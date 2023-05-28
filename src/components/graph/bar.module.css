@@ -16,6 +16,9 @@
   position: relative;
 }
 
+/* Bar used to cover the part of the bar that is supposed to not be there
+    this is done so that the bars look like they have the same gradient. 
+*/
 .bar_cover {
   position: absolute;
   width: 100%;
@@ -23,6 +26,7 @@
   background-color: rgb(var(--background-rgb));
 }
 
+/* Mostrly just flips the graphs 90 degrees to make more friendly for smaller screens */
 @media screen and (max-width: 576px) {
   .bar {
     flex-direction: column-reverse;

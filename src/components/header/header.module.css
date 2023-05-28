@@ -6,9 +6,11 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
+  /* Creates the frosted glass look of the header */
   background: rgb(var(--background-rgb) 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(5px);
   backdrop-filter: saturate(180%) blur(5px);
+  /* Safari support */
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
 }
 
 /* Use box shadow as border will get blurred by the backdrop filter */
@@ -46,6 +48,7 @@
   gap: 0.5rem;
   border: none;
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .download {
@@ -95,6 +98,7 @@
     color: rgb(var(--text-rgb));
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
 
   .hamburger {
@@ -126,7 +130,6 @@
   }
 
   .links > li {
-    padding: 1rem 0;
     border-bottom: 1px solid rgb(var(--secondary-rgb));
   }
 
@@ -135,7 +138,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 0.5rem;
+    padding: 1 0.5rem;
   }
 
   .links img {
@@ -145,6 +148,7 @@
 
   .links > li > a {
     font-size: 2rem;
+    display: block;
   }
 
   .links {

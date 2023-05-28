@@ -12,6 +12,8 @@ export default function Bar({
 }) {
   const barCover = useRef<HTMLDivElement>(null);
 
+  // Used to set the css property "--value" to the value of the bar
+  // so it can be used in the css file
   useEffect(() => {
     if (barCover.current) {
       barCover.current.style.setProperty("--value", `${100 - value}%`);

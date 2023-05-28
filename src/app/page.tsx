@@ -1,13 +1,14 @@
 import Image from "next/image";
 import style from "./page.module.css";
 
+// Imports starting with @/ are aliases for the src/ directory
+
 import branchingImage from "@/images/branching.png";
 
 import Carousel from "@/components/carousel/Carousel";
 import Graph from "@/components/graph/Graph";
 
 export default function Home() {
-  // return <main className={styles.main}></main>;
   return (
     <main className={style.main}>
       <section className={style.top_section}>

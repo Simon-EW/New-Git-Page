@@ -3,7 +3,7 @@
 import { images } from "./images";
 import style from "./carousel.module.css";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -31,6 +31,7 @@ export default function Carousel() {
           }px`,
         }}
       >
+        {/* Load images twice so it will always be visible */}
         {images.map((image, index) => (
           <a
             key={index}

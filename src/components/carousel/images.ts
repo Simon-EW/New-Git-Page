@@ -11,6 +11,10 @@ import Postgres from "@/icons/carousel/Postgres.svg";
 import Ruby from "@/icons/carousel/Ruby.svg";
 import Xorg from "@/icons/carousel/Xorg.svg";
 
+
+// Make images into an array of objects with src, alt, and href
+// to be used in the carousel component, hrefs are the same as on the
+// normal git page
 export const images = [
   {
     src: Android,

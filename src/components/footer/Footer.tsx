@@ -18,16 +18,19 @@ export default function Footer() {
       <div className={style.download_wrapper}>
         <span>Downloads</span>
         <div className={style.downloads}>
-          <a href="https://github.com/git/git">
+          <a href="https://github.com/git/git" target="_blank">
             <Image src={gitHubIcon} alt="" aria-hidden /> <span>Source</span>
           </a>
-          <a href="https://www.kernel.org/pub/software/scm/git/">
+          <a
+            href="https://www.kernel.org/pub/software/scm/git/"
+            target="_blank"
+          >
             <Image src={tarBallIcon} alt="" aria-hidden /> <span>Tarballs</span>
           </a>
-          <a href="https://git-scm.com/download/win">
+          <a href="/download/git-clients#windows">
             <Image src={windowsIcon} alt="" aria-hidden /> <span>Windows</span>
           </a>
-          <a href="https://git-scm.com/download/mac">
+          <a href="/download/git-clients#mac">
             <Image src={macIcon} alt="" aria-hidden /> <span>Mac</span>
           </a>
         </div>

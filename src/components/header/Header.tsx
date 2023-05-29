@@ -68,9 +68,9 @@ export default function Nav() {
           aria-label="Open menu"
         >
           <span className={style.hamburger}>
-            <span className={style.bar}></span>
-            <span className={style.bar}></span>
-            <span className={style.bar}></span>
+            <span className={style.bar1}></span>
+            <span className={style.bar2}></span>
+            <span className={style.bar3}></span>
           </span>
         </button>
         <ul className={`${style.links}`} id="menu">

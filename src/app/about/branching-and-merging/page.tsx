@@ -10,18 +10,21 @@ export default function BranchingAndMerging() {
     <>
       <h1>Branching and Merging</h1>
       <section className={style.section}>
-        <p>
-          The Git feature that really makes it stand apart from nearly every
-          other SCM out there is its branching model.
-        </p>
-        <p>
-          Git allows and encourages you to have multiple local branches that can
-          be entirely independent of each other. The creation, merging, and
-          deletion of those lines of development takes seconds.
-        </p>
+        <div className={style.grid}>
+          <p>
+            The Git feature that really makes it stand apart from nearly every
+            other SCM out there is its branching model.
+          </p>
+          <p>
+            Git allows and encourages you to have multiple local branches that
+            can be entirely independent of each other. The creation, merging,
+            and deletion of those lines of development takes seconds.
+          </p>
+        </div>
+
         <div className={pageStyle.list_wrapper}>
           <p>This means that you can do things like:</p>
-          <ul className={style.list}>
+          <ul className={`${style.list} ${style.grid}`}>
             <li>
               <p>
                 <span className={style.focus}>
@@ -67,19 +70,21 @@ export default function BranchingAndMerging() {
           alt="Image visualizing 3 branches, main, dev and topic"
           className={pageStyle.image}
         />
-        <p>
-          Notably, when you push to a remote repository, you do not have to push
-          all of your branches. You can choose to share just one of your
-          branches, a few of them, or all of them. This tends to free people to
-          try new ideas without worrying about having to plan how and when they
-          are going to merge it in or share it with others.
-        </p>
-        <p>
-          There are ways to accomplish some of this with other systems, but the
-          work involved is much more difficult and error-prone. Git makes this
-          process incredibly easy and it changes the way most developers work
-          when they learn it.
-        </p>
+        <div className={style.grid}>
+          <p>
+            Notably, when you push to a remote repository, you do not have to
+            push all of your branches. You can choose to share just one of your
+            branches, a few of them, or all of them. This tends to free people
+            to try new ideas without worrying about having to plan how and when
+            they are going to merge it in or share it with others.
+          </p>
+          <p>
+            There are ways to accomplish some of this with other systems, but
+            the work involved is much more difficult and error-prone. Git makes
+            this process incredibly easy and it changes the way most developers
+            work when they learn it.
+          </p>
+        </div>
       </section>
       <BottomNav
         next={{ label: "Small & Fast", link: "/about/small-and-fast" }}

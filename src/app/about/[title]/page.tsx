@@ -5,6 +5,16 @@ export const metadata = {
   description: "Learn about Git",
 };
 
+export const generateStaticParams = async () => {
+  return [
+    { params: { title: "distributed" } },
+    { params: { title: "data-assurance" } },
+    { params: { title: "staging-area" } },
+    { params: { title: "free-and-open-source" } },
+    { params: { title: "trademark" } },
+  ];
+};
+
 export default function Page({ params }: { params: { title: string } }) {
   return (
     <>

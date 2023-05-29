@@ -5,6 +5,14 @@ export const metadata = {
   description: "Git documentation",
 };
 
+export const generateStaticParams = async () => {
+  return [
+    { params: { title: "book" } },
+    { params: { title: "videos" } },
+    { params: { title: "external-links" } },
+  ];
+};
+
 export default function Page({ params }: { params: { title: string } }) {
   return (
     <>

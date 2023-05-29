@@ -5,6 +5,10 @@ export const metadata = {
   description: "Download Git",
 };
 
+export const generateStaticParams = async () => {
+  return [{ params: { title: "gui-clients" } }, { params: { title: "logos" } }];
+};
+
 export default function Page({ params }: { params: { title: string } }) {
   return (
     <>

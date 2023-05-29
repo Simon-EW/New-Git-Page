@@ -113,7 +113,7 @@ export default function Nav() {
             />
           </li>
           <li>
-            <a href="google.com">Community</a>
+            <a href="/community">Community</a>
           </li>
         </ul>
       </nav>

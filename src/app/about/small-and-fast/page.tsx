@@ -7,6 +7,12 @@ import BenchmarkResults from "@/components/about/BenchmarkResults";
 import { results } from "./benchmarks";
 import BottomNav from "@/components/about/BottomNav";
 
+export const metadata = {
+  title: "Small and Fast",
+  description:
+    "Git is fast. With Git, nearly all operations are performed locally, giving it a huge speed advantage on centralized systems that constantly have to communicate with a server somewhere.",
+};
+
 export default function SmallAndFast() {
   return (
     <>

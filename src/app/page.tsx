@@ -8,6 +8,11 @@ import branchingImage from "@/images/branching.png";
 import Carousel from "@/components/carousel/Carousel";
 import Graph from "@/components/graph/Graph";
 
+export const metadata = {
+  title: "Home",
+  description: "Git homepage",
+};
+
 export default function Home() {
   return (
     <main className={style.main} id="main">

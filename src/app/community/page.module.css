@@ -1,0 +1,33 @@
+.main {
+  padding: 5rem var(--inline-padding);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.main p {
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.main a {
+  color: rgb(var(--primary-rgb));
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

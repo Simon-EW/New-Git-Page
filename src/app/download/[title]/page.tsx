@@ -1,5 +1,10 @@
 import style from "./page.module.css";
 
+export const meta = {
+  title: "Download",
+  description: "Download Git",
+};
+
 export default function Page({ params }: { params: { title: string } }) {
   return (
     <>

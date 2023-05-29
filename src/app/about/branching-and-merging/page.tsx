@@ -5,6 +5,11 @@ import pageStyle from "./page.module.css";
 import branchImage from "@/images/BranchingAndMerging/branches.png";
 import BottomNav from "@/components/about/BottomNav";
 
+export const metadata = {
+  title: "Branching and Merging",
+  description: "Git&apos;s branching model allows you to try new ideas easily.",
+};
+
 export default function BranchingAndMerging() {
   return (
     <>

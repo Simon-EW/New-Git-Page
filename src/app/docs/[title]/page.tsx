@@ -1,5 +1,10 @@
 import style from "./page.module.css";
 
+export const metadata = {
+  title: "Docs",
+  description: "Git documentation",
+};
+
 export default function Page({ params }: { params: { title: string } }) {
   return (
     <>

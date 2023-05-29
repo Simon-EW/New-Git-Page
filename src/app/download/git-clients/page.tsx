@@ -3,6 +3,11 @@ import style from "../layout.module.css";
 import pageStyle from "./page.module.css";
 import downloadIcon from "@/icons/Download.svg";
 
+export const metadata = {
+  title: "Git Clients",
+  description: "Git desktop cli-clients",
+};
+
 export default function GitClients() {
   return (
     <>

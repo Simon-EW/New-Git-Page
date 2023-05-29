@@ -1,6 +1,6 @@
 import style from "./page.module.css";
 
-export const meta = {
+export const metadata = {
   title: "Download",
   description: "Download Git",
 };

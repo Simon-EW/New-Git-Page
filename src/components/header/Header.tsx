@@ -102,15 +102,7 @@ export default function Nav() {
             />
           </li>
           <li>
-            <Dropdown
-              label="Docs"
-              items={[
-                { label: "Reference", link: "reference" },
-                { label: "Book", link: "book" },
-                { label: "Videos", link: "videos" },
-                { label: "External Links", link: "external-links" },
-              ]}
-            />
+            <a href="/docs">Docs</a>
           </li>
           <li>
             <a href="/community">Community</a>

@@ -1,0 +1,49 @@
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: rgb(var(--secondary-rgb));
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav a:hover {
+  background-color: rgb(var(--secondary-rgb), 0.8);
+}
+
+.section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: rgb(var(--primary-rgb));
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.section section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}

@@ -7,6 +7,7 @@ export default function AboutLayout({
 }) {
   return (
     <main className={style.main} id="main">
+      {/* <nav className={style.nav}></nav> */}
       {children}
     </main>
   );
